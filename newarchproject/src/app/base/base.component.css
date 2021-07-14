@@ -1,0 +1,9 @@
+/* #Basehome{
+    width: 100%;
+    height: auto;
+} */
+
+#footers{
+    position: fixed;
+    bottom: 0px;
+}

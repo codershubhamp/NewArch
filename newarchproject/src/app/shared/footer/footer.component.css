@@ -1,0 +1,21 @@
+
+.text{
+    float: right;
+    padding-right: 5px;
+}
+/* footer list group */
+.list-group{
+    list-style: none;
+    margin-left: 3px;
+}
+/* footer content list item */
+.list-item{
+    margin-right:8px;
+    font-family: ui-monospace;
+    font-weight: bold;
+}
+/* footer shadow */
+.shadow-sm{
+    box-shadow: 1px -1px 1px -1px !important;
+    width: 100%;
+}

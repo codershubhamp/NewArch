@@ -1,0 +1,27 @@
+<!-- login code -->
+<div class="container-fluid">
+    <div class="row justify-content-center h-100" id="loginPagetop" >
+        <div class="col-10 col-sm-10 col-md-3 col-lg-3" id="logincenter">
+            <img src="assets/logo.png" id="logo" alt="nologo">
+            <h2 class="text-center">Login</h2>
+            <!-- Login Form start -->
+            <form #loginUser="ngForm" (ngSubmit)="loginData(loginUser);">
+              <div class="form-group">
+                <input  type="text" name="UserName" id="exampleInputEmail1" ngModel required class="form-control ng-pristine ng-touched ng-invalid" aria-describedby="emailHelp" placeholder="Username &#42;"  #UserName="ngModel">
+                 <small class="error" *ngIf="UserName.touched && !UserName.valid"[ngStyle]="{'color':'red'}">Required</small>   
+                </div>
+                <div class="form-group">
+                  <input  type="password" name="password" id="exampleInputEmail1" ngModel required class="form-control ng-pristine ng-touched ng-invalid" aria-describedby="emailHelp" placeholder="Password &#42;"  #password="ngModel">
+                  <small *ngIf="password.touched && !password.valid"[ngStyle]="{'color':'red'}">Required</small>
+                </div>
+                <div class="form-group mt-2 pt-2">
+                    <button type="submit" class="btn btn-primary w-100" routerLink="/base" >Login</button>
+                </div>
+             </form>
+             <h6 class="text-center mt-4">beta2.15.0</h6>
+              <!-- Login Form End -->
+        </div>
+      </div>
+          
+  </div>
+  

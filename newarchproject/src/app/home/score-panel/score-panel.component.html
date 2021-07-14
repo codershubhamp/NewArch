@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="row p-4 " >
+        <!-- first card -->
+        <div class="col-sm">
+            <div class="card bg-primary">
+                <div class="card-body" id="cardbody">
+                <h5 class="card-title" >Currency Pipe</h5>
+                {{number1|currency: 'INR':'symbol':'1.0-0'}}
+                </div>
+            </div>
+        </div>
+        <!-- second card -->
+        <div class="col-sm">
+            <div class="card bg-secondary">
+                <div class="card-body" id="cardbody" >  
+                <h5 class="card-title">Time Pipe</h5>
+                {{'23:11:00'|TimeFormat}}
+                </div>
+            </div>
+        </div>
+        <!-- third card -->
+        <div class="col-sm">
+            <div class="card bg-light">
+                <div class="card-body">
+                <h5 class="card-title text-muted">Date Pipe</h5>
+                 <b> {{ today_date |date:'dd MMM yyyy'}}</b>
+                </div>
+            </div>
+        </div>
+        <!-- fourth card -->
+        <div class="col-sm">
+            <div class="card bg-warning">
+                <div class="card-body">
+                <h5 class="card-title text-muted">Date Pipe</h5>
+               <b> {{ today_date |date:'dd MMM yyyy HH:mm'}}</b>
+                </div>
+            </div>
+        </div>
+        <!-- fifth card -->
+        <div class="col-sm">
+            <div class="card bg-light">
+                <div class="card-body">
+                <h5 class="card-title text-muted">UTC Pipe</h5>
+                <b>{{ today_date |date:'dd MMM yyyy HH:mm':"+0000"}}</b>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+</div> 

@@ -1,0 +1,42 @@
+<!-- <h3>{{Hero}}</h3> -->
+
+<!-- Dialog Card -->
+<div class="container-fluid dialog h-100">
+       <div class="row">
+        <h1><b>Sample Dialog</b></h1>
+        <!-- close Icon -->
+        <h1 class="close"><i class="fas fa-times"></i></h1>
+       </div>
+       <!--Form  -->
+        <form #loginUser="ngForm" (ngSubmit)="loginData(loginUser);">
+            <div class="row">
+                    <div class="form-group col-sm-6 col-md-6">
+                        <label for="">Plan Text Input</label>
+                        <input  type="text" name="UserName" id="exampleInputEmail1" ngModel required class="form-control ng-pristine ng-touched ng-invalid" aria-describedby="emailHelp" placeholder="TEST" #UserName="ngModel">
+                        <small class="error" *ngIf="UserName.touched && !UserName.valid"[ngStyle]="{'color':'red'}">Required</small>   
+                    </div>
+                    <div class="form-group col-sm-6 col-md-6">
+                        <label for="">Plan Text Input</label>
+                        <input  type="text" name="UserName" id="exampleInputEmail1" ngModel required class="form-control ng-pristine ng-touched ng-invalid" aria-describedby="emailHelp" placeholder="TEST"  #UserName="ngModel">
+                         <small class="error" *ngIf="UserName.touched && !UserName.valid"[ngStyle]="{'color':'red'}">Required</small>   
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-6 col-md-6">
+                           <label for="">Plan Text Input</label>
+                            <input  type="text" name="UserName" id="exampleInputEmail1" ngModel required class="form-control ng-pristine ng-touched ng-invalid" aria-describedby="emailHelp" placeholder="TEST"  #UserName="ngModel">
+                             <small class="error" *ngIf="UserName.touched && !UserName.valid"[ngStyle]="{'color':'red'}">Required</small>   
+                        </div>
+                        <div class="form-group col-sm-6 col-md-6">
+                            <label for="">Plan Text Input</label>
+                            <input  type="text" name="UserName" id="exampleInputEmail1" ngModel required class="form-control ng-pristine ng-touched ng-invalid" aria-describedby="emailHelp"  placeholder="TEST"  #UserName="ngModel">
+                            <small class="error" *ngIf="UserName.touched && !UserName.valid"[ngStyle]="{'color':'red'}">Required</small>   
+                        </div>
+                 </div>
+        </form>
+</div>
+<!-- Card button -->
+<div class="row" id="Button_Bottom">
+     <button class="btn btn-primary m-2" (click)='outputEmit("save")'>Save</button>
+     <button class="btn btn-light m-2" (click)='outputEmit("cancle")'>Cancle</button>
+</div>

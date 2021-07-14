@@ -1,0 +1,22 @@
+/* FromComponent Input  */
+#exampleInputEmail1 ,#exampleInputPassword1{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#emailHelp{
+    padding-left: 11px;
+}
+/* Form Error Msg */
+ #errorMsg{
+    border-color: rgb(206, 18, 18);
+}
+/* Form Save Button */
+#Button_Bottom{
+    float: right;
+    margin-top: 200px;
+}
+/* Close Button */
+.close{
+    margin-left: 280px;
+}

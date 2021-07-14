@@ -1,0 +1,35 @@
+/* login css */
+
+body{
+    padding:0px;
+    margin: 0px;
+}
+/* Login Form Top */
+#loginPagetop{
+    position: relative;
+
+}
+/* Login Form Center */
+#logincenter{
+    position: absolute;
+    top:20vh;
+}
+/* Login Form Logo */
+#logo{
+    width:100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+/* Login Form Input field */
+#exampleInputEmail1 ,#exampleInputPassword1{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#emailHelp{
+    padding-left: 11px;
+}
+/* Login Form Error */
+ #errorMsg{
+    border-color: rgb(206, 18, 18);
+}
